@@ -5,13 +5,15 @@
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">123</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/db_lesson</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/library_1</property>
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
 
         <!-- MAPPINGS -->
-        <mapping class="org.example.enntity.EmployeeEntity"/>
+        <mapping class="org.example.dto.Book"/>
+        <mapping class="org.example.dto.Student"/>
+        <mapping class="org.example.dto.StudentBook"/>
     </session-factory>
 
 </hibernate-configuration>
