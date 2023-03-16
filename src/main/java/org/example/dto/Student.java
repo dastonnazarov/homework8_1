@@ -14,12 +14,16 @@ public class Student {
     private Integer id;
     @Column(name = "name")
     private String name;
+
     @Column(name = "surname")
     private String surname;
+
     @Column(name = "phone")
     private String phone;
+
     @Column(name = "birthDate")
     private String birthDate;
+
     @Column(name = "role")
     private StudentRole role;
 

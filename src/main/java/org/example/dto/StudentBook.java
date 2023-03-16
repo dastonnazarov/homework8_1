@@ -9,16 +9,22 @@ public class StudentBook {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer sId;
+
     @Column(name = "student_id")
     private Integer student_id;
+
     @Column(name = "book_id")
     private Integer book_id;
+
     @Column(name = "createDate")
     private LocalDate createDate;
+
     @Column(name = "createDate")
     private String status;
+
     @Column(name = "returnedDate")
     private LocalDate returnedDate;
+
     @Column(name = "duration")
     private Integer duration;
 
